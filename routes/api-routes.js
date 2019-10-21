@@ -1,22 +1,24 @@
 // Requiring Portfolio model
 var db = require("../models");
 var router = require('express').Router();
+var path = require("path");
 
-// module.exports = function (app) {
-//   Portfolio route
-// router.get("/portfolio", function (req, res) {
+router.get("/form", function (req, res) {
+    res.sendFile(path.join(__dirname, "../public/websiteEntry.html"));
+})
 
-//     db.Portfolio.create({
-//         NAME: "Train Scheduler",
-//         IMAGE: "images/TrainSchedule.gif",
-//         DESC: "Train Scheduler application benefits user on showcasing schedules of different train user wishes to view. Usercan add new train at any point to view schedule. Minutes away field and next arrival keeps updating every minute so that user can keeptrack of their train.",
-//         LINK: "https://mahi-mani.github.io/TrainScheduler/"
-//     }).then(function (result) {
-//         console.log("New row created into portfolio table");
-//         res.json(result);
-//     })
-// })
+// Root route
+router.get("/", function(req, res){
+    res.sendFile(path.join(__dirname, "../public/index.html"));
+  })
 
+
+// Contact route
+router.get("/contact", function(req, res){
+    res.sendFile(path.join(__dirname, "../public/contact.html"));
+  })
+
+// Portfolio route
 router.get("/portfolio", function (req, res) {
 
     db.Portfolio.findAll({}).then(function (result) {
@@ -25,6 +27,19 @@ router.get("/portfolio", function (req, res) {
             result: result
         }
         res.render("index", obj);
+    })
+})
+
+// Post a new website
+router.post("/new/website", function(req, res){
+
+    db.Portfolio.create({
+        NAME: req.body.name,
+        IMAGE: req.body.image,
+        DESC: req.body.desc,
+        LINK: req.body.link
+    }).then(function(result){
+        res.json(result);
     })
 })
 

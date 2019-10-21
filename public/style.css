@@ -1,0 +1,188 @@
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css);
+@import url(https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.4.3/css/mdb.min.css);
+body{
+background-image: url("../images/bg4.jpg");
+background-repeat:no-repeat;
+-webkit-background-size:cover;
+-moz-background-size:cover;
+-o-background-size:cover;
+background-size:cover;
+background-position:center;
+}
+
+#bg{
+  position: relative;
+  height: 150px;
+  box-shadow: 10px 10px 5px grey;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.bottom-right {
+  position: absolute;
+  bottom: 8px;
+  right: 16px;
+  
+}
+.btn-circle {
+  width: 30px;
+  height: 30px;
+  padding: 6px 6px;
+  border-radius: 15px;
+  text-align: center;
+  font-size: 12px;
+  /* line-height: 1.42857; */
+}
+
+#home,
+#portfolio,
+#contact{
+  color: #80ced6;
+}
+
+.textOverImage {
+    /* position: relative; */
+    /* top:0;   */
+    text-align: center;
+    color: white;
+  }
+  h1,h4{
+    text-align: center;
+    margin-top: 100px;
+    color:#0080ff;
+  }
+  .bg-dark{
+    color:#80ced6;
+  }
+  #profile{
+    border-radius: 50%;
+    float: center;
+    display: block;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 10px 10px 5px grey;
+
+  }
+
+  .img-thumbnail{
+    background: #000;
+    height: 200px;
+    width: 350px;
+  }
+
+  .hovereffect {
+    width: 350px;
+    height: 200px;
+    /* float: center; */
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    cursor: default;
+  }
+  
+  .hovereffect .overlay {
+    width: 350px;
+    height: 200px;
+    position: relative;
+    overflow: hidden;
+    top: 0;
+    /* left: 0; */
+    background-color: rgba(0,0,0,0.6);
+    opacity: 0;
+    filter: alpha(opacity=0);
+    -webkit-transform: translate(460px, -100px) rotate(180deg);
+    -ms-transform: translate(460px, -100px) rotate(180deg);
+    transform: translate(460px, -100px) rotate(180deg);
+    -webkit-transition: all 0.2s 0.4s ease-in-out;
+    transition: all 0.2s 0.4s ease-in-out;
+  }
+  
+  .hovereffect img {
+    display: block;
+    position: absolute;
+    -webkit-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+  }
+  .imgBtn{
+    width: 300px;
+    height: 300px;
+  }
+  /* #imgBtnofBtn{
+    width: 300px;
+    height: 300px;
+  } */
+  
+  /* .hovereffect h2 { */
+    .text{
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+    position: relative;
+    font-size: 17px;
+    margin-top:-50px;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.6);
+  }
+  
+  .hovereffect a.info {
+    display: inline-block;
+    text-decoration: none;
+    padding: 7px 14px;
+    text-transform: uppercase;
+    color: #fff;
+    border: 1px solid #fff;
+    margin: 50px 0 0 0;
+    background-color: transparent;
+    -webkit-transform: translateY(-200px);
+    -ms-transform: translateY(-200px);
+    transform: translateY(-200px);
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .hovereffect a.info:hover {
+    box-shadow: 0 0 5px #fff;
+  }
+  
+  .hovereffect:hover .overlay {
+    opacity: 1;
+    filter: alpha(opacity=100);
+    -webkit-transition-delay: 0s;
+    transition-delay: 0s;
+    -webkit-transform: translate(0px, 0px);
+    -ms-transform: translate(0px, 0px);
+    transform: translate(0px, 0px);
+  }
+  
+  .hovereffect:hover h2 {
+    -webkit-transform: translateY(0px);
+    -ms-transform: translateY(0px);
+    transform: translateY(0px);
+    -webkit-transition-delay: 0.5s;
+    transition-delay: 0.5s;
+  }
+  
+  .hovereffect:hover a.info {
+    -webkit-transform: translateY(0px);
+    -ms-transform: translateY(0px);
+    transform: translateY(0px);
+    -webkit-transition-delay: 0.3s;
+    transition-delay: 0.3s;
+  }
+
+  /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+
+  .card {
+    margin: 0 auto; /* Added */
+    float: none; /* Added */
+    margin-bottom: 10px; /* Added */
+}
+#sticky-footer{
+  box-shadow: 10px 10px 5px grey;
+}
+
+
+  
