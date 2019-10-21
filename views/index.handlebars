@@ -4,11 +4,6 @@
     <div class="col-md-12">
         <!-- Place holder for background image -->
         <div id="bg" class="py-3 text-center" style="background-image: url(images/bg1.jpg); border: 1px solid black;">
-            <div class="row">
-                <div class="col-md-12">
-                    <img src="images/0.jpg" alt="mahi" id="profile">
-                </div>
-            </div>
             <div class="bottom-right">
                 <a href="/" id="home" class="btn btn-default btn-circle"><i class="fas fa-home"
                         style="text-shadow: 2px 2px 5px #000;"></i></a>
@@ -27,18 +22,18 @@
     <div class="col-md-2"></div>
     <div class="col-md-8">
 
+        {{!-- For each value retrived from database generates below div elements --}}
         {{#each result}}
         <div class="d-inline-flex flex-row bd-highlight mb-3 imgBtn">
-            <button type="button" class="btn text-center website modal-trigger" id="imgBtnofBtn"data-id={{id}}>
+            <button type="button" class="btn text-center website modal-trigger" id="imgBtnofBtn" data-id={{id}}>
                 <img src={{IMAGE}} class="img-responsive img-thumbnail" alt="TrainSchedule">
                 <div class="text">{{NAME}}</div>
             </button>
         </div>
         {{!-- Modal --}}
-        {{!-- <div class="modal" id="train" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"> --}}
+
         <div class="modal fade" id={{id}} tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
             aria-hidden="true">
-            {{!-- <div class="modal fade" tabindex="-1" role="dialog" id={{id}}> --}}
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
@@ -61,4 +56,16 @@
         {{/each}}
     </div>
     <div class="col-md-2"></div>
+</div>
+
+<!-- Footer -->
+<div class="row">
+    <div class="col-md-12">
+        <footer id="sticky-footer" class="py-4 bg-dark text-white-50 shadow-lg p-3 mt-0 bg-dark rounded">
+            <div class="container text-center">
+                <a href="/form" id="contact" class="btn btn-default btn-circle"><i class="fas fa-poll-h"
+                        style="text-shadow: 2px 2px 5px #000;"></i></a>
+            </div>
+        </footer>
+    </div>
 </div>
