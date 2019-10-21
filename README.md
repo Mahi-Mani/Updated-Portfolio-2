@@ -15,9 +15,7 @@ Built a professional portfolio site using HTML/Bootstrap. This website basically
 far as this code is concerned, utilised inquirer to dynamically prompt question to user. Used mysql npm package to create schemas.
 
 ## Site pictures
-![Site](one.jpg)
-![Site](two.jpg)
-![Site](three.jpg)
+![Site](MahishaGunasekaran.gif)
 
 ## Code Snippet
 ```Handlebars
