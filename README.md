@@ -1,7 +1,7 @@
 # Updated Portfolio
 
 ## Summary
-Built a professional portfolio site using HTML/Bootstrap. This website basically has three web pages linked to each other. Applied different concepts like bootstrap, padding, margins to be mobile responsive. Used handlebars to dynamically generate portfolios in portfolio page. Used MySql database to store portfolio details and access them via GET request. Also using `/form` api route, one can input a new portfolio which in turn will be stored to portfolio table.
+Built a professional portfolio site using HTML/Bootstrap. This website basically has three web pages linked to each other. Applied different concepts like bootstrap, padding, margins to be mobile responsive. Used handlebars to dynamically generate portfolios in portfolio page. Used MySql database to store portfolio details and access them via GET request. Also using `/form` api route, one can input a new portfolio which in turn will be stored to portfolio table. In addition to all these features, one can even delete a portfolio that is no longer needed.
 
 ## Technologies Used
 - HTML : used to create elements on the DOM
